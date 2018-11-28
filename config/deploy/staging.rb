@@ -3,7 +3,7 @@ set :branch, "master"
 
 role :app, %w{boomerangbike@staging.boomerangbike.com}
 role :web, %w{boomerangbike@staging.boomerangbike.com}
-role :db, %w{boomerangbike@staging.boomerangbike.com}
+#role :db, %w{boomerangbike@staging.boomerangbike.com}
 
 set :ssh_options, {
   forward_agent: true,

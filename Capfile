@@ -34,7 +34,7 @@ install_plugin Capistrano::SCM::Git
 # require "capistrano/rails/migrations"
 # require "capistrano/passenger"
 
-#set :rbenv_ruby, '5.0.2'
+set :rbenv_ruby, '5.0.2'
 puts "mi"
 
 # Load custom tasks from `lib/capistrano/tasks` if you have any defined
