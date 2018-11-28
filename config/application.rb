@@ -15,7 +15,7 @@ module Deploystudy
     # config/application.rb
 
 # Replace ActionDispatch::ShowExceptions with Lifo::ShowExceptions
-#config.middleware.swap ActionDispatch::ShowExceptions, Lifo::ShowExceptions
+config.middleware.swap ActionDispatch::ShowExceptions
 
     # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
     # Run "rake -D time" for a list of tasks for finding time zone names. Default is UTC.
