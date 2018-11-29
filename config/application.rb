@@ -15,7 +15,7 @@ module Deploystudy
     # config/application.rb
 
 # config/application.rb
-
+require 'rack'
 # Push Rack::BounceFavicon at the bottom
 config.middleware.use Rack::BounceFavicon
 
