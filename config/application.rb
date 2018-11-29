@@ -15,13 +15,8 @@ module Deploystudy
     # config/application.rb
 
 # config/application.rb
-require 'rack/BounceFavicon'
-# Push Rack::BounceFavicon at the bottom
-config.middleware.use Rack::BounceFavicon
-
-# Add Lifo::Cache after ActionDispatch::Executor.
-# Pass { page_cache: false } argument to Lifo::Cache.
-config.middleware.insert_after ActionDispatch::Executor, Lifo::Cache, page_cache: false
+ require 'rack'
+require 'rack/contrib'
 
     # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
     # Run "rake -D time" for a list of tasks for finding time zone names. Default is UTC.
